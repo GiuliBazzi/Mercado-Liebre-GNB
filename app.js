@@ -6,10 +6,13 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public');
 app.use( express.static(publicPath) );
 
+const port =process.env.PORT || 3000;
+app.listen (port, ()=>console.log(servidor Coriendo en el puerto ${port}))
+/*
 app.listen (4400, () => {
     console.log ('Servidor corriendo correctamente')
 });
-
+*/
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
