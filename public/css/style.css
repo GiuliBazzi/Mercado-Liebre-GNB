@@ -1,0 +1,796 @@
+/*Estilos Generales*/
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/*Logo*/
+.logo-buscador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.logos {
+    width: 60%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Barra de Busqueda*/
+.search-bar {
+    width: 75%;
+    position: relative;
+    text-align: center;
+}
+
+#search {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.submit {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.formulario-home {
+    display: flex;
+    margin: 10px;
+}
+
+.formulario-home input {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    height: 25px;
+    text-align: center;
+    width: 200px;
+}
+
+/*Navegar*/
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: none;
+}
+
+/*Burger Menu*/
+.burger-menu {
+    background-color: #1259c3;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.burger-menu i {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/*Banner*/
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-banner {
+    width: 100vw;
+    max-width: 100%;
+}
+
+/*MAIN*/
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main article {
+    margin: 10px;
+}
+
+/*Articulos*/
+article {
+    padding: 18px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+section {
+    margin: 10px;
+}
+
+.catalogo {
+    position: relative;
+}
+
+.contenedor-precio-desc {
+    display: flex;
+}
+
+.Titulares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.Titulares article {
+    flex: 1;
+}
+
+/*Iconos*/
+.icons {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.icons {
+    color: #1259c3;
+    font-size: 24px;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.fa-truck {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #39b54a;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/*Linea gris*/
+.catalogo {
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+/*Estilos Textos*/
+p {
+    font-size: 15px;
+    margin: 10px;
+    color: black;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+.cuerpo {
+    font-size: 12px;
+}
+
+.Titulares {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+
+h2 {
+    color: #666;
+    font-size: 24px;
+}
+
+.tit {
+    margin: 20px;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #666;
+    display: none;
+    margin-left: 10px;
+
+}
+
+h6 {
+    text-align: center;
+    font-size: 8px;
+}
+
+/*PIE-PAGINA*/
+.pie-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hijo-pie-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pie-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hijo-pie-pagina {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+/*ANIMACIONES*/
+.icons:hover {
+    color: #EAC926;
+    animation: brillo 1s infinite;
+}
+
+@keyframes brillo {
+    0% {
+        filter: brightness(100%);
+    }
+
+    50% {
+        filter: brightness(130%);
+    }
+
+    100% {
+        filter: brightness(100%);
+        /* Brillo normal */
+    }
+}
+
+.producto {
+    transition: transform 0.2s;
+}
+
+.producto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.producto:active::before {
+    opacity: 1;
+}
+
+.producto:active {
+    transform: scale(0.95);
+}
+
+.fa-truck {
+
+    transition: transform 0.6s;
+    transform-origin: center center;
+}
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+}
+
+.producto {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.02);
+}
+
+nav {
+    width: 100%;
+}
+
+/* style.css */
+/*Estilos Generales*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+    color: #555;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #03264C;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form select {
+    background-size: 20px;
+    padding-right: 30px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button {
+    background-color: #1259c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+form button:hover {
+    background-color: #03264C;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#contraseña {
+    width: 80%;
+}
+
+.contenedor-footer {
+    width: 60%;
+    margin: auto;
+}
+
+#contraseñas {
+    width: 80%;
+}
+
+.registro {
+    margin: 10px;
+}
+
+.registros {
+    margin: 10px;
+}
+/* Estilos para tablets (maximo 361 px) */
+@media screen and (min-width: 361px) {
+    .descripcion {
+        font-size: 16px;
+        color: #666;
+        display: block;
+        text-align: center;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .Titulares article {
+        flex-basis: calc(40% - 10px);
+    }
+
+    .logo-buscador {
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    .logos {
+        width: 30%;
+    }
+
+    .search-bar {
+        width: 35%;
+    }
+
+    .pie-pagina {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar {
+        background-color: #EAC926;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .caja-uno {
+        display: flex;
+        align-items: center;
+    }
+
+    .caja-dos {
+        display: flex;
+        align-items: center;
+    }
+
+    .caja-uno a,
+    .caja-dos a {
+        margin: 0 8px;
+        font-size: 13px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .caja-dos {
+        margin-left: auto;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .descuento {
+        margin-left: 20px;
+    }
+
+    .cuo {
+        font-size: 10px;
+
+    }
+
+    p {
+        font-size: 10px;
+
+    }
+
+    .formu form {
+        width: 50%;
+        margin: auto;
+    }
+    .contenedor-footer {
+        width: 50%;
+        margin: auto;
+    }
+    
+}
+
+
+/* Estilos para desktops (mínimo 769px) */
+@media screen and (min-width: 769px) {
+    .descripcion {
+        font-size: 16px;
+        color: #666;
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .Titulares article {
+        flex-basis: calc(22% - 18px);
+    }
+
+    .search-bar {
+        width: 50%;
+        height: 10%;
+        margin: 0px;
+    }
+
+    .pie-pagina {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    .caja-uno {
+        display: flex;
+    }
+
+    .caja-dos {
+        display: flex;
+    }
+
+    .logos {
+        width: 20%;
+    }
+
+    .cuo {
+        margin-left: 58px;
+    }
+
+    .descuento {
+        margin-left: 20px;
+    }
+
+    .navbar {
+        background-color: #EAC926;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .caja-uno {
+        display: flex;
+        align-items: center;
+    }
+
+    .caja-dos {
+        display: flex;
+        align-items: center;
+    }
+
+    .caja-uno a,
+    .caja-dos a {
+        margin: 0 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+    }
+
+    .formu form {
+        width: 50%;
+        margin: auto;
+    }
+
+
+    .caja-dos {
+        margin-left: auto;
+        /* Empuja "caja dos" hacia la derecha */
+    }
+
+    nav {
+        display: block;
+    }
+    .contenedor-footer {
+        width: 50%;
+        margin: auto;
+    }
+    
+    p {
+        font-size: 18px;
+        margin: 1px;
+    }
+
+    /* Estilos para teléfonos (máximo 360px) */
+    @media screen and (max-width: 360px) {
+        .Titulares article {
+            flex-basis: 100%;
+        }
+
+        /* style.css */
+        /*Estilos Generales*/
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*HEADER*/
+        header {
+            background-color: #EAC926;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebebeb;
+            color: #555;
+        }
+
+        header {
+            background-color: #EAC926;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            color: #03264C;
+        }
+
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        form input[type="text"],
+        form input[type="password"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        form select {
+            background-size: 20px;
+            padding-right: 30px;
+        }
+
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        form button {
+            background-color: #1259c3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        form button:hover {
+            background-color: #03264C;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        #contraseña {
+            width: 80%;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
+        .formu form {
+            width: 50%;
+            margin: auto;
+        }
+}
