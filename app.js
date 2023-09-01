@@ -7,7 +7,7 @@ const publicPath = path.resolve(__dirname, './public');
 app.use( express.static(publicPath) );
 
 const port =process.env.PORT || 3000;
-app.listen (port, ()=>console.log(servidor Coriendo en el puerto ${port}))
+app.listen (port, ()=>console.log("Servidor Levantado"))
 /*
 app.listen (4400, () => {
     console.log ('Servidor corriendo correctamente')
